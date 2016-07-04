@@ -1,2 +1,0 @@
-require './votebot'
-run Votebot
