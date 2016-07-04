@@ -1,8 +1,4 @@
-language: ruby
-sudo: false
-cache: bundler
-rvm:
-- 2.3.1
+language: crystal
 env:
   global:
   - GITHUB_REPO: openpolitics/manifesto
