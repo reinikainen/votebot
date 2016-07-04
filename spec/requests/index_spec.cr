@@ -5,7 +5,7 @@ describe "index page" do
   
   it "should allow accessing the home page" do
     get "/"
-    response.body.should eq "http://openpolitics.org.uk"
+    response.body.includes?("http://openpolitics.org.uk").should eq true
   end
   
   stop
