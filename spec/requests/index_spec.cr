@@ -1,9 +1,10 @@
 describe "index page" do
+  start
   
   it "should allow accessing the home page" do
-    get '/'
-    expect(last_response).to be_ok
-    expect(last_response.body).to include("http://openpolitics.org.uk")
+    get "/"
+    response.body.should eq "http://openpolitics.org.uk"
   end
   
+  stop
 end

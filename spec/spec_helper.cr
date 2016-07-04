@@ -1,4 +1,5 @@
 require "spec"
+require "spec-kemal"
 require "../src/votebot"
 
 # require 'rack/test'
