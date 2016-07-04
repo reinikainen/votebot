@@ -7,3 +7,5 @@
 /dump.rdb
 .byebug_history
 coverage
+libs
+.shards

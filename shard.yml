@@ -1,0 +1,12 @@
+name: votebot
+version: 0.1.0
+
+authors:
+  - James Smith <james@floppy.org.uk>
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: sdogruyol/kemal
+    branch: master
