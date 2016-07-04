@@ -152,4 +152,4 @@ end
 #   
 # end
 
-Kemal.run
+Kemal.run unless Kemal.config.env == "test"

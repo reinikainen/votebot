@@ -1,3 +1,5 @@
+require "../spec_helper"
+
 describe "index page" do
   start
   
