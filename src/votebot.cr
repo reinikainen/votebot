@@ -1,11 +1,6 @@
 require "./votebot/*"
+require "kemal"
 
-module Votebot
-  # TODO Put your code here
-end
-
-# require 'sinatra/base'
-# require 'sinatra/partial'
 # require "bugsnag"
 # require 'octokit'
 # require_relative 'environments'
@@ -37,10 +32,10 @@ end
 #     200
 #   end
 # 
-#   get '/' do
-#     @pull_requests = PullRequest.find_all.sort_by{|x| x.number.to_i}.reverse
-#     erb :index
-#   end
+get "/" do
+  @pull_requests = [] of PullRequest #PullRequest.find_all.sort_by{|x| x.number.to_i}.reverse
+  render "src/views/index.ecr", "src/views/layout.ecr"
+end
 #   
 #   get '/users' do
 #     @users = User.find_all
@@ -156,3 +151,5 @@ end
 #   end
 #   
 # end
+
+Kemal.run
