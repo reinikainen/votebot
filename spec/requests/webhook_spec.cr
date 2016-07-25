@@ -1,4 +1,5 @@
 describe "webhook POST" do
+  start
 
 #   it "/ should reject unknown posts" do
 #     post '/webhook'
@@ -39,4 +40,5 @@ describe "webhook POST" do
 #     expect(last_response).to be_bad_request
 #   end
 
+  stop
 end

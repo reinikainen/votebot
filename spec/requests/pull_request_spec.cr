@@ -1,6 +1,7 @@
 require "../spec_helper"
 
 describe PullRequest do
+  start
 
 #   it "should update pull requests on demand" do
 #     Timecop.freeze(2015,5,30)
@@ -36,4 +37,5 @@ describe PullRequest do
 #     expect(pr.agree.count).to eq 1
 #   end
 
+  stop
 end
